@@ -51,7 +51,7 @@ public class No2 {
                 tail.next = new ListNode(sum % 10);
                 tail = tail.next;
             }
-            carry = sum / 10;
+            carry = sum > 9 ? 1 : 0;
             if(l1 != null){
                 l1 = l1.next;
             }
